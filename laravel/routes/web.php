@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('index');
 });
+
 Route::get('/posts', 'PostsController' );
 Route::get('/posts/{id}', 'SinglePostController' )->where('id', '[0-9]+');
 Route::get('/about', function () {
